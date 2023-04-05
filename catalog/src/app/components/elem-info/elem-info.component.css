@@ -1,0 +1,33 @@
+.input_title {
+    width: 300px;
+    height: 40px;
+    background: #abebf5;
+}
+
+.input_information {
+    width: 300px;
+    height: 100px;
+    background: #abebf5;
+}
+
+.form {
+    text-align: center;
+}
+
+.delete {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.form div {
+    margin: 20px 0px 0px 0px;
+}
+
+.input_update,
+.button_delete {
+    background: #abeebc;
+    border: 1px solid #000000;
+    cursor: pointer;
+    padding: 2px 10px;
+    width: 100px;
+}

@@ -1,0 +1,22 @@
+<h2>Open Account</h2>
+<form class="form" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="number">Number</label><br>
+        <input type="text" name="number" [(ngModel)]="account.number" class="input" />
+    </div>
+    <div>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" [(ngModel)]="account.name" class="input" />
+    </div>
+    <div>
+        <label for="currency">Currency</label><br>
+        <input type="text" name="currency" [(ngModel)]="account.currency" class="input" />
+    </div>
+    <div>
+        <label for="balance">Balance</label><br>
+        <input type="text" name="balance" [(ngModel)]="account.balance" class="input" />
+    </div>
+    <div>
+        <input type="submit" value="Open" class="submit">
+    </div>
+</form>

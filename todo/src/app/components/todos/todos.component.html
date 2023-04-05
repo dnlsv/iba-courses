@@ -1,0 +1,3 @@
+<app-todo-item *ngFor="let todoItem of todos" [todo]="todoItem" (onCheckboxToggle)="onCheckboxToggle($event)" (onDeleteTodo)="onDeleteTodo($event)">
+
+</app-todo-item>

@@ -1,0 +1,17 @@
+<app-header></app-header>
+<form class="form" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="title">Title</label><br>
+        <input type="text" [(ngModel)]="elem.title" name="title" class="input_title" />
+    </div>
+    <div>
+        <label for="information">Information</label><br>
+        <textarea type="text" [(ngModel)]="elem.information" name="information" class="input_information"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Update" class="input_update">
+    </div>
+</form>
+<div class="delete">
+    <button (click)="onDelete(elem)" class="button_delete">Delete</button>
+</div>

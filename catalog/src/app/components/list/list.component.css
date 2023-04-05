@@ -1,0 +1,8 @@
+.elem {
+    flex: 0 1 33.333%;
+}
+
+.changeView {
+    display: flex;
+    flex-wrap: wrap;
+}

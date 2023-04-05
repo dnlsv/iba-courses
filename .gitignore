@@ -1,0 +1,10 @@
+# Intellij IDEA #
+.idea
+bin/
+out/
+target/
+*.iml
+
+# MS Visual Studio #
+.vs
+Debug/

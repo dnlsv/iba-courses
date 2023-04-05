@@ -1,0 +1,35 @@
+<h2>Information</h2>
+<form class="form" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="number">Number</label><br>
+        <input type="text" name="number" [(ngModel)]="number" class="input" />
+    </div>
+    <div>
+        <input type="submit" value="Info" class="submit">
+    </div>
+</form>
+<div class="info">
+    <div class="account-info">
+        <p>Number: {{ account.number }}</p>
+        <p>Name: {{ account.name }}</p>
+        <p>Currency: {{ account.currency }}</p>
+        <p>Balance: {{ account.balance }}</p>
+    </div>
+    <table>
+        <caption>Transactions list</caption>
+        <tr>
+            <th class="th">NumberTr</th>
+            <th class="th">Name</th>
+            <th class="th">Date</th>
+            <th class="th">NumberAc</th>
+            <th>Amount</th>
+        </tr>
+        <tr *ngFor="let transactionItem of transactions">
+            <td>{{ transactionItem.id }}</td>
+            <td>{{ transactionItem.name }}</td>
+            <td>{{ transactionItem.date }}</td>
+            <td>{{ transactionItem.number }}</td>
+            <td>{{ transactionItem.amount }}</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,14 @@
+<h2>Put Money</h2>
+<form class="form" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="number">Number</label><br>
+        <input type="text" name="number" [(ngModel)]="transaction.number" class="input" />
+    </div>
+    <div>
+        <label for="amount">Amount</label><br>
+        <input type="text" name="amount" [(ngModel)]="transaction.amount" class="input" />
+    </div>
+    <div>
+        <input type="submit" value="Put" class="submit">
+    </div>
+</form>

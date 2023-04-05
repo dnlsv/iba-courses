@@ -1,0 +1,10 @@
+<h2>Close Account</h2>
+<form class="form" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="number">Number</label><br>
+        <input type="text" name="number" [(ngModel)]="number" class="input" />
+    </div>
+    <div>
+        <input type="submit" value="Close" class="submit">
+    </div>
+</form>

@@ -1,0 +1,64 @@
+#!/usr/bin/bash
+
+function casefun {
+case "$1" in
+1)
+pwd
+;;
+2)
+ls -l
+;;
+3)
+echo "Enter string"
+read str
+echo "Your string:"
+echo $str
+;;
+4)
+echo "Enter command"
+read com
+man $com
+;;
+5)
+echo "Enter file name"
+read file
+touch $file
+;;
+6)
+echo "Enter file name"
+read file
+rm $file
+;;
+7)
+echo "Enter directory name"
+read dir
+cd $dir
+;;
+-help)
+echo -e "\n\tCommand Menu\n1 - Print working directory (pwd)\n2 - List (ls -l_)\n3 - echo\n4 - Manual (man)\n5 - Create file (touch)\n6 - Remove file (rm)\n7 - Change directory (cd)\n0 - Exit"
+;;
+0)
+return 1
+;;
+*)
+echo "This is *"
+;;
+esac
+}
+
+if [[ $1 != "" ]];
+then 
+casefun $1
+else
+while :
+do
+echo -e "\n\tCommand Menu\n1 - Print working directory (pwd)\n2 - List (ls -l_)\n3 - echo\n4 - Manual (man)\n5 - Create file (touch)\n6 - Remove file (rm)\n7 - Change directory (cd)\n0 - Exit"
+read num
+echo ""
+casefun $num
+if [[ $? -eq 1 ]];
+then
+break
+fi
+done
+fi
