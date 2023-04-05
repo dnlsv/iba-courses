@@ -8,9 +8,8 @@ describe('CloseAccountComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CloseAccountComponent ]
-    })
-    .compileComponents();
+      declarations: [CloseAccountComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

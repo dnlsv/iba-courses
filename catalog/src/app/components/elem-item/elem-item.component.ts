@@ -5,20 +5,16 @@ import { ElemService } from 'src/app/services/elem.service';
 @Component({
   selector: 'app-elem-item',
   templateUrl: './elem-item.component.html',
-  styleUrls: ['./elem-item.component.css']
+  styleUrls: ['./elem-item.component.css'],
 })
 export class ElemItemComponent implements OnInit {
-
   @Input() elem!: Elem;
 
-  constructor(private elemServices: ElemService) { }
+  constructor(private elemServices: ElemService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  onClick(elem: Elem)
-  {
+  onClick(elem: Elem) {
     this.elemServices.elem = elem;
   }
-
 }

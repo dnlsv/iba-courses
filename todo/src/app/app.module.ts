@@ -22,16 +22,20 @@ import { AboutComponent } from './components/about/about.component';
     TodoItemComponent,
     HeaderComponent,
     AddTodoComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientInMemoryWebApiModule.forRoot(DataService, { post204: false, put204: false, delay: 1000 }),
+    HttpClientInMemoryWebApiModule.forRoot(DataService, {
+      post204: false,
+      put204: false,
+      delay: 1000,
+    }),
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

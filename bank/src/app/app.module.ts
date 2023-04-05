@@ -23,15 +23,10 @@ import { InfoComponent } from './components/info/info.component';
     CloseAccountComponent,
     PutMoneyComponent,
     GetMoneyComponent,
-    InfoComponent
+    InfoComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoatingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, FormsModule, AppRoatingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

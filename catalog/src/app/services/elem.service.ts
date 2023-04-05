@@ -5,35 +5,34 @@ import { Elem } from '../models/Elem';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'aplication-json'
-  })
-}
+    'Content-Type': 'aplication-json',
+  }),
+};
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ElemService {
-
-  elemUrl = 'api/list'
+  elemUrl = 'api/list';
 
   flag!: boolean;
   elem!: Elem;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getList(): Observable<Elem[]> {
-    return this.http.get<Elem[]>(
-      `${this.elemUrl}`
-    );
+    return this.http.get<Elem[]>(`${this.elemUrl}`);
   }
 
-  updateElem(elem : Elem) {
-    return this.http.put<Elem[]>(`${this.elemUrl}/${elem.id}`, elem, httpOptions);
+  updateElem(elem: Elem) {
+    return this.http.put<Elem[]>(
+      `${this.elemUrl}/${elem.id}`,
+      elem,
+      httpOptions
+    );
   }
 
   deleteElem(elem: Elem) {
     return this.http.delete<Elem[]>(`${this.elemUrl}/${elem.id}`, httpOptions);
   }
-
-  
 }

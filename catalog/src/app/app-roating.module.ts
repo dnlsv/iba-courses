@@ -11,17 +11,12 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'elem-info', component: ElemInfoComponent },
   { path: 'page404', component: ErrorComponent },
-  { path: '**', redirectTo: 'page404' }
+  { path: '**', redirectTo: 'page404' },
 ];
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoatingModule { }
+export class AppRoatingModule {}

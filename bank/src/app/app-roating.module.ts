@@ -10,22 +10,17 @@ import { GetMoneyComponent } from './components/get-money/get-money.component';
 import { InfoComponent } from './components/info/info.component';
 
 const routes: Routes = [
-  { path: '', component: WrapperComponent},
-  { path: 'open-account', component: OpenAccountComponent},
-  { path: 'close-account', component: CloseAccountComponent},
-  { path: 'put-money', component: PutMoneyComponent},
-  { path: 'get-money', component: GetMoneyComponent},
-  { path: 'info', component: InfoComponent}
-]
+  { path: '', component: WrapperComponent },
+  { path: 'open-account', component: OpenAccountComponent },
+  { path: 'close-account', component: CloseAccountComponent },
+  { path: 'put-money', component: PutMoneyComponent },
+  { path: 'get-money', component: GetMoneyComponent },
+  { path: 'info', component: InfoComponent },
+];
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoatingModule { }
+export class AppRoatingModule {}

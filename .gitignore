@@ -8,3 +8,7 @@ target/
 # MS Visual Studio #
 .vs
 Debug/
+
+# Make Utility #
+*.exe
+*.o

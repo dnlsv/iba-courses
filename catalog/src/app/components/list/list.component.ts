@@ -5,28 +5,23 @@ import { Elem } from '../../models/Elem';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  styleUrls: ['./list.component.css'],
 })
 export class ListComponent implements OnInit {
-
   list!: Elem[];
 
-  constructor(private elemServices: ElemService) { }
+  constructor(private elemServices: ElemService) {}
 
   ngOnInit(): void {
-    this.elemServices.getList().subscribe(list => {
+    this.elemServices.getList().subscribe((list) => {
       this.list = list;
-    })
+    });
   }
 
   setClasses() {
     const classes = {
-      'changeView': this.elemServices.flag
-    }
-    return classes;    
+      changeView: this.elemServices.flag,
+    };
+    return classes;
   }
-
-  
-
-
 }

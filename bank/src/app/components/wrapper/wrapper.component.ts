@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-wrapper',
   templateUrl: './wrapper.component.html',
-  styleUrls: ['./wrapper.component.css']
+  styleUrls: ['./wrapper.component.css'],
 })
 export class WrapperComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

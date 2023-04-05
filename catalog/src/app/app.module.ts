@@ -28,16 +28,20 @@ import { ErrorComponent } from './components/error/error.component';
     ElemInfoComponent,
     ChangeComponent,
     WrapperComponent,
-    ErrorComponent
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientInMemoryWebApiModule.forRoot(DataService, { post204: false, put204: false, delay: 1000 }),
+    HttpClientInMemoryWebApiModule.forRoot(DataService, {
+      post204: false,
+      put204: false,
+      delay: 1000,
+    }),
     HttpClientModule,
-    AppRoatingModule
+    AppRoatingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

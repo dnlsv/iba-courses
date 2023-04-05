@@ -1,13 +1,13 @@
 .todo {
-    background: #f4f4f4;
-    padding: 10px;
-    border-bottom: 1px #ccc dotted;
+  background: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px #ccc dotted;
 }
 
 .is-complited {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .delete {
-    margin: 0px 0px 0px 100px;
+  margin: 0px 0px 0px 100px;
 }

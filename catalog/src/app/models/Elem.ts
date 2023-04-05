@@ -1,5 +1,5 @@
 export interface Elem {
-    id: number,
-    title: string,
-    information: string
+  id: number;
+  title: string;
+  information: string;
 }
